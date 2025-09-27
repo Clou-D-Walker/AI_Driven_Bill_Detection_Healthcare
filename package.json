@@ -1,0 +1,16 @@
+{
+  "name": "ai-driver-bill-detection-healthcare",
+  "version": "1.0.0",
+  "description": "Monorepo root wrapper to build frontend and start backend server",
+  "main": "server/index.js",
+  "scripts": {
+    "build": "npm install --prefix server && npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "npm run start --prefix server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
