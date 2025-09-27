@@ -42,6 +42,8 @@ POST /api/medical-amounts/step1/extract
 Content-Type: multipart/form-data (for images)
 Content-Type: application/json (for text)
 
+```
+```
 Image Upload
 curl -X POST http://localhost:3001/api/medical-amounts/step1/extract \
   -F "image=@medical_bill.jpg"
