@@ -58,7 +58,8 @@ curl -X POST http://localhost:3001/api/medical-amounts/step1/extract \
 ```http
 POST /api/medical-amounts/step2/normalize
 Content-Type: application/json
-
+```
+```
 curl -X POST http://localhost:3001/api/medical-amounts/step2/normalize \
   -H "Content-Type: application/json" \
   -d '{
@@ -71,7 +72,8 @@ curl -X POST http://localhost:3001/api/medical-amounts/step2/normalize \
 ```http
 POST /api/medical-amounts/step3/classify
 Content-Type: application/json
-
+```
+```
 curl -X POST http://localhost:3001/api/medical-amounts/step3/classify \
   -H "Content-Type: application/json" \
   -d '{
@@ -84,7 +86,8 @@ curl -X POST http://localhost:3001/api/medical-amounts/step3/classify \
 ```http
 POST /api/medical-amounts/step4/finalize
 Content-Type: application/json
-
+```
+```
 curl -X POST http://localhost:3001/api/medical-amounts/step4/finalize \
   -H "Content-Type: application/json" \
   -d '{
@@ -99,7 +102,8 @@ curl -X POST http://localhost:3001/api/medical-amounts/step4/finalize \
 POST /api/medical-amounts/process
 Content-Type: multipart/form-data (for images)
 Content-Type: application/json (for text)
-
+```
+```
 # Process complete document in one call
 curl -X POST http://localhost:3001/api/medical-amounts/process \
   -F "image=@medical_bill.jpg"
