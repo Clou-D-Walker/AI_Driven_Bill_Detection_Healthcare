@@ -42,11 +42,11 @@ POST /api/medical-amounts/step1/extract
 Content-Type: multipart/form-data (for images)
 Content-Type: application/json (for text)
 
-# Image Upload
+## Image Upload
 curl -X POST http://localhost:3001/api/medical-amounts/step1/extract \
   -F "image=@medical_bill.jpg"
 
-# Text Input
+## Text Input
 curl -X POST http://localhost:3001/api/medical-amounts/step1/extract \
   -H "Content-Type: application/json" \
   -d '{"text": "Total: INR 1200 | Paid: 1000 | Due: 200"}'
@@ -235,18 +235,6 @@ curl -X POST http://localhost:3001/api/medical-amounts/process \
 - Automatic cleanup of temporary files
 - Rate limiting protection
 
-## 🚀 Deployment
-
-### Docker Deployment
-```dockerfile
-FROM node:16-alpine
-WORKDIR /app
-COPY package*.json ./
-RUN npm ci --only=production
-COPY . .
-EXPOSE 3001
-CMD ["npm", "start"]
-```
 
 ### Environment Setup
 ```bash
