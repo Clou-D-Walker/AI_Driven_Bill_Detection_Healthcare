@@ -1,0 +1,36 @@
+{
+  "name": "medical-ai-document-processing-server",
+  "version": "1.0.0",
+  "description": "AI-powered medical document amount detection service",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "jest"
+  },
+  "keywords": [
+    "medical",
+    "ai",
+    "ocr",
+    "document-processing",
+    "gemini"
+  ],
+  "author": "MedicalAI Team",
+  "license": "MIT",
+  "dependencies": {
+    "@google/genai": "^0.10.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^4.18.2",
+    "joi": "^17.11.0",
+    "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.2",
+    "supertest": "^6.3.3"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
